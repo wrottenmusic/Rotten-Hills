@@ -96,13 +96,15 @@
     </div>
 
     <script>
-        function handleUnlock() {
-            setTimeout(() => {
-                document.getElementById('unlock-msg').style.display = 'block';
-                document.getElementById('download-section').style.display = 'block';
-            }, 1200);
-        }
-    </script>
+    function handleUnlock() {
+        setTimeout(() => {
+            // This hides the hint message
+            document.getElementById('unlock-msg').style.display = 'none';
+            // This reveals the download button
+            document.getElementById('download-section').style.display = 'block';
+        }, 1200);
+    }
+</script>
 
 </body>
 </html>
